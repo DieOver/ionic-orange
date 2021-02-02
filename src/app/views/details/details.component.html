@@ -1,0 +1,37 @@
+<ion-content>
+  <header>
+    <div class="action">
+      <i (click)="back()" class="icon-ic_arrow_run_left"></i>
+    </div>
+    <div class="info">
+      <h1>{{ item.title }}</h1>
+      <h2>{{ item.members }} family members have access</h2>
+    </div>
+    <div class="config">
+      <i class="icon-cog"></i>
+    </div>
+    <div class="indicators">
+      <div class="temp">
+        <div class="icon">
+          <i class="icon-sun"></i>
+        </div>
+        <div class="infos">
+          <h1>24˚C</h1>
+          <h2>TEMP</h2>
+        </div>
+      </div>
+      <div class="humidity">
+        <div class="icon">
+          <i class="icon-droplet"></i>
+        </div>
+        <div class="infos">
+          <h1>50%</h1>
+          <h2>HUMIDITY</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <app-cardlist [item]="it" *ngFor="let it of item.items"></app-cardlist>
+  </main>
+</ion-content>

@@ -1,0 +1,11 @@
+<ion-content>
+    <header>
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_S9DUg_S9CHf-DxgcNbxYzZmibzud95wxTQslnreREOxA1ch1&usqp=CAU" />
+        <h1>Hi Samuel</h1>
+        <h2>Welcome to Home</h2>
+    </header>
+    <main>
+        <app-cardbox [item]="item" *ngFor="let item of itemsService.Items"></app-cardbox>
+    </main>
+</ion-content>

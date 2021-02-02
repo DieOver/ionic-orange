@@ -1,0 +1,13 @@
+<section>
+  <div class="icon">
+    <i class="{{ item.icon }}"></i>
+  </div>
+  <div class="info">
+    <h1>{{ item.name }}</h1>
+    <p>{{ item.desc }}</p>
+  </div>
+  <div class="action">
+    <ion-toggle name="active" [(ngModel)]="item.active" [value]="item.active" (click)="toogle($event)" mode="md">
+    </ion-toggle>
+  </div>
+</section>

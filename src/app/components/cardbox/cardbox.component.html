@@ -1,0 +1,7 @@
+<section (click)="goToDetails()">
+  <h1>{{ item.title }}</h1>
+  <p>{{ item.members }} family members have access</p>
+  <h2>{{ item.devices }} Devices</h2>
+  <ion-toggle name="active" [(ngModel)]="item.active" [value]="item.active" (click)="toogle($event)" mode="md">
+  </ion-toggle>
+</section>
